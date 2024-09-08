@@ -1,10 +1,13 @@
+import React from "react";
+import Banner from "../components/Banner";
+// import Products from "../components/Products";
 
-
-const Home = () => {
+export default function Home() {
   return (
-    
-    <div>Home</div>
-  )
+    <>
+      <Banner />
+      {/* <Products /> */}
+      
+    </>
+  );
 }
-
-export default Home

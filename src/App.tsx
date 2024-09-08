@@ -1,14 +1,12 @@
-// import Logo from './assets/logo.png'
+
 import './App.css'
-import Banner from './components/Banner'
+import MainLayout from './components/layout/MainLayout'
+// import MainLayout from './components/layouts/MainLayout'
 
 function App() {
-
   return (
-    <div>
-    
-      <Banner/>
-      
+    <div className=' min-h-screen w-full '>
+           <MainLayout />
     </div>
   )
 }
