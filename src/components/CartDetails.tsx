@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Minus, Plus, Trash2 } from "lucide-react";
-import React from "react";
+
 
 import { useAppDispatch } from "../redux/hooks";
 import { updateQuantity } from "../redux/features/cartSlice";

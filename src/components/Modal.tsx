@@ -1,5 +1,5 @@
 import { ShoppingCart } from "lucide-react";
-import React from "react";
+// import React from "react";
 import Rating from "./Ratings";
 
 const Modal = ({ product, onClose, handleAddToCart }: any) => {

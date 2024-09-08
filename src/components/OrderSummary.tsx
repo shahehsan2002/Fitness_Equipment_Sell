@@ -1,5 +1,4 @@
 import { CreditCard, Trash2 } from "lucide-react";
-import React from "react";
 import { useAppDispatch, useAppSelector } from "../redux/hooks";
 import { clearCart } from "../redux/features/cartSlice";
 

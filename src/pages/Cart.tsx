@@ -1,9 +1,9 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from "react";
+
 import CartDetails from "../components/CartDetails";
 import OrderSummary from "../components/OrderSummary";
 import { useAppSelector } from "../redux/hooks";
-import getAllProducts from "../data/products";
+// import getAllProducts from "../data/products";
 
 const Cart = () => {
   // const products = getAllProducts();
