@@ -1,11 +1,9 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-import { Moon, ShoppingCart } from "lucide-react";
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import { Moon, ShoppingCart } from "lucide-react";
+import { useState } from "react";
+// import Logo from "../assets/logo.png";
 import { useAppSelector } from "../redux/hooks";
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 const Header = () => {
   const products = useAppSelector((store) => store.cart.products);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,15 +13,16 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gradient-to-r from-green-500 to-blue-500 text-white px-4 py-4 shadow-lg">
+    <header className="fixed top-0 left-0  w-full bg-transparent text-white px-4 my-12 shadow-lg z-50">
       <nav className="container mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <img src={Logo} alt="StrengthZone Logo" className="w-32 h-auto" />
+          {/* <img src={Logo} alt="StrengthZone Logo" className="w-24 h-auto" /> */}
+          <p className="font-extrabold text-3xl ml-36 " >StrengthZone</p>
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6 lg:mr-36">
           <ul className="flex space-x-6">
             <li>
               <Link
@@ -140,9 +139,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <button className="hover:text-yellow-400 transition duration-300">
+            {/* <button className="hover:text-yellow-400 transition duration-300">
               <Moon size={24} />
-            </button>
+            </button> */}
           </li>
         </ul>
       )}
