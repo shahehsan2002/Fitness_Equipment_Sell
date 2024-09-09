@@ -1,12 +1,18 @@
 
 import Banner from "../components/Banner";
-import Products from "../components/Products";
+import Benefits from "../components/Benefits";
+import FAQ from "../components/FAQ";
+import Gallery from "../components/Gallery";
+// import Products from "../components/Products";
 
 export default function Home() {
   return (
     <>
       <Banner />
-      <Products />
+      {/* <Products /> */}
+      <Benefits/>
+      <Gallery/>
+      <FAQ/>
       
     </>
   );
