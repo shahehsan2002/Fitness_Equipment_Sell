@@ -13,8 +13,9 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0  w-full bg-transparent text-white px-4 my-12 shadow-lg z-50">
-      <nav className="container mx-auto flex items-center justify-between">
+    <header className=" sm:m-0 sm:font-medium fixed top-0 left-0 w-full bg-transparent text-white px-4 mb-12 shadow-lg z-50 md:ml-4 ">
+    <nav className="container mx-auto flex items-center justify-between">
+  
         {/* Logo */}
         <Link to="/">
           {/* <img src={Logo} alt="StrengthZone Logo" className="w-24 h-auto" /> */}
@@ -48,6 +49,23 @@ const Header = () => {
                 Contact
               </Link>
             </li>
+            <li>
+              <Link
+                className="hover:text-yellow-400 transition duration-300"
+                to="/login"
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-yellow-400 transition duration-300"
+                to="/register"
+              >
+                Register
+              </Link>
+            </li>
+            
           </ul>
           <div className="flex items-center space-x-4">
             {/* Cart Icon */}

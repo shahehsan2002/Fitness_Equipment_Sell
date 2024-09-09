@@ -12,7 +12,7 @@ const dispatch = useAppDispatch()
     dispatch(updateQuantity(payload))
   }
   return (
-    <div className="flex items-center justify-between space-x-4 border m-20 border-gray-300 rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-lg w-full max-w-md mx-auto">
+    <div className="flex items-center justify-between space-x-4 border my-20 border-gray-300 rounded-lg p-4 bg-white shadow-md transition-transform transform hover:scale-105 hover:shadow-lg w-full max-w-md mx-auto">
       <img
         src={product.image}
         alt={product.name}

@@ -4,7 +4,7 @@ export const products = [
     name: "Adjustable Dumbbells",
     description: "A pair of adjustable dumbbells with varying weight settings.",
     price: "199.99",
-    image: "https://via.placeholder.com/150?text=Dumbbells",
+    image: "https://i.postimg.cc/G34rdjC8/kedibone-isaac-makhumisane-SAr-Gwhw-GTI0-unsplash-1.jpg",
     ratings: 5
   },
   {
@@ -12,7 +12,7 @@ export const products = [
     name: "Resistance Bands",
     description: "Set of resistance bands for strength training and flexibility.",
     price: "29.99",
-    image: "https://via.placeholder.com/150?text=Resistance+Bands",
+    image: "https://i.postimg.cc/VvC3MDfK/kelly-sikkema-IZOAOjvwha-M-unsplash.jpg",
     ratings: 4
   },
   {
@@ -20,7 +20,7 @@ export const products = [
     name: "Yoga Mat",
     description: "Comfortable, non-slip yoga mat for home workouts.",
     price: "49.99",
-    image: "https://via.placeholder.com/150?text=Yoga+Mat",
+    image: "https://i.postimg.cc/g07SD8BQ/juan-miguel-agudo-d-Cd1l-xta-BA-unsplash.jpg",
     ratings: 5
   },
   {
@@ -28,15 +28,15 @@ export const products = [
     name: "Foam Roller",
     description: "High-density foam roller for muscle recovery and flexibility.",
     price: "24.99",
-    image: "https://via.placeholder.com/150?text=Foam+Roller",
+    image: "https://i.postimg.cc/NFdTkJrc/61-QUu-Uu-Ll-KL.jpg",
     ratings: 3
   },
   {
     id: 5,
-    name: "Kettlebell Set",
+    name: "kettlebell Set",
     description: "Durable kettlebells for strength training exercises.",
     price: "149.99",
-    image: "https://via.placeholder.com/150?text=Kettlebells",
+    image: "https://i.postimg.cc/1X7nq8LR/ryan-de-hamer-WIPIAJW2-P8-unsplash.jpg",
     ratings: 4
   },
   {
@@ -44,7 +44,7 @@ export const products = [
     name: "Treadmill",
     description: "Compact treadmill for home cardio workouts.",
     price: "699.99",
-    image: "https://via.placeholder.com/150?text=Treadmill",
+    image: "https://i.postimg.cc/Pxr5QtbC/gastro-editorial-v-Cz-RMEDMZus-unsplash.jpg",
     ratings: 5
   },
   {
@@ -52,7 +52,7 @@ export const products = [
     name: "Exercise Bike",
     description: "Stationary exercise bike with adjustable resistance levels.",
     price: "599.99",
-    image: "https://via.placeholder.com/150?text=Exercise+Bike",
+    image: "https://i.postimg.cc/9M6F5G57/andrew-valdivia-AB7-Tc-T-GVU0-unsplash.jpg",
     ratings: 4
   },
   {
@@ -60,7 +60,7 @@ export const products = [
     name: "Jump Rope",
     description: "Speed jump rope for cardio and endurance training.",
     price: "14.99",
-    image: "https://via.placeholder.com/150?text=Jump+Rope",
+    image: "https://i.postimg.cc/MGZndbqZ/5146-4.jpg",
     ratings: 5
   },
   {
@@ -68,17 +68,10 @@ export const products = [
     name: "Ab Roller",
     description: "Abdominal roller for core strength training.",
     price: "29.99",
-    image: "https://via.placeholder.com/150?text=Ab+Roller",
+    image: "https://i.postimg.cc/6qZqyMLc/AD0053-H-p1yblu.jpg",
     ratings: 4
   },
-  {
-    id: 10,
-    name: "Pull-Up Bar",
-    description: "Adjustable pull-up bar for upper body strength training.",
-    price: "79.99",
-    image: "https://via.placeholder.com/150?text=Pull-Up+Bar",
-    ratings: 4
-  },
+  
 ];
 
 const getAllProducts = () => {

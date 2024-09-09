@@ -50,7 +50,7 @@ const ProductCart = ({ product }: { product: any }) => {
             e.stopPropagation();
             handleAddToCart(product);
           }}
-          className="bg-gradient-to-r from-green-500 to-teal-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-green-600 hover:to-teal-600 transition duration-300 shadow-lg hover:shadow-xl"
+          className="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-green-600 hover:to-orange-300 transition duration-300 shadow-lg hover:shadow-xl"
         >
           Add to Cart
         </button>
