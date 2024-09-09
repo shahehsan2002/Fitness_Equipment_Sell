@@ -18,7 +18,7 @@ const Register: React.FC = () => {
 
   const [signUP] = useSignUPMutation();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const user = await signUP({ username: name, email, password, role });
 
@@ -30,7 +30,7 @@ const Register: React.FC = () => {
         <h2 className="text-2xl font-semibold text-center text-red-700">
           Register
         </h2>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6" onSubmit={handleSubmmit}>
           <div>
             <label
               htmlFor="name"
