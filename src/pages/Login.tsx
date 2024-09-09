@@ -1,11 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAppDispatch, useAppSelector } from "../redux/hooks";
+import { RootState } from "../redux/store";
+import { useLoginMutation } from "../redux/api/auth/authApi";
 
 const Login: React.FC = () => {
+const dispatch = useAppDispatch();
+  const { name, password } = useAppSelector(
+    (state: RootState) => state.login
+  );
 
-  // console.log("token", token);
+  const [login{data}] = useLoginMutation();
 
-  
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const user = await login({ username: name, password });
+    console.log("our input", { name, password }, "output:", user);
+  };
 
 
   return (

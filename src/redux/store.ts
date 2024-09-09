@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./features/cartSlice";
 import registerReducer from "./features/RegisterSlice";
+import loginReducer from "./features/loginSlice";
 import { baseApi } from "./api/baseApi";
 export const store = configureStore({
 
@@ -8,7 +9,12 @@ export const store = configureStore({
     [baseApi.reducerPath]:baseApi.reducer,
     cart: cartReducer,
     register:registerReducer,
+    login:loginReducer,
   },
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({ serializableCheck: false }).concat(
+      baseApi.middleware
+    ),
 });
 
 // Infer the `RootState`,  `AppDispatch`, and `AppStore` types from the store itself
